@@ -1,5 +1,5 @@
 /* ======= Icones Tecnologias =======*/
-import { SiJavascript, SiTypescript, SiReact, SiAngular, SiBootstrap, SiStyledcomponents, SiNodedotjs, SiJquery, SiMysql } from 'react-icons/si';
+import { SiJavascript, Sipython, SiTypescript, SiReact, SiAngular, SiBootstrap, SiStyledcomponents, SiNodedotjs, SiJquery, SiMysql } from 'react-icons/si';
 
 export const links = [
     {
@@ -48,7 +48,7 @@ export const skills = [
     {
         id: 2,
         name: 'Python',
-        image: <siemens id='' />
+        image: <Sipython id='' />
     },
     {
         id: 3,
