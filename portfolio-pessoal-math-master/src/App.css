@@ -1,17 +1,17 @@
- /* ================================================= */
- /*                   GOOGLE FONTS                    */
- /* ================================================= */
+
+ /*GOOGLE FONTS */
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
  
  
-  /* ================================================= */
-  /*                    VARIAVEIS CSS                  */
-  /* ================================================= */
+
+  /* VARIAVEIS CSS*/
+ 
  
  :root {
      
-     /* ================== Cores ================== */
+     /*Cores */
      --primary-color: hsl(12, 100%, 36%);
      --title-color: hsl(0, 0%, 100%);
      --text-color: hsl(0, 0%, 92%);
@@ -43,7 +43,7 @@
          var(--bg-color) 100%
      );
  
-     /* ================== Tipografia ================== */
+     /*Tipografia*/
      --body-font: 'Poppins', sans-serif;
      --second-font: 'Caveat', cursive;
  
@@ -62,19 +62,18 @@
      --smaller-font-size: .875rem;
      --tiny-font-size: .8125rem;
  
-     /* ================== Sombreamento ================== */
+     /*Sombreamento*/
      --shadow: 5px 5px rgb(255 255 255 /10%);
  
-     /* ================== Transições ================== */
+     /*Transições */
      --transition: cubic-bezier(0.3, 0, 0.3, 1);
  }
  
-  /* ================================================= */
-  /*                  LIGHT THEME                      */
-  /* ================================================= */
+
+  /* LIGHT THEME */
  
  .light-theme {
-     /* ================== Cores ================== */
+     /*Cores*/
      --title-color: #000;
      --text-color: #262626;
      --bg-color: #afaead;
@@ -82,7 +81,7 @@
      --container-color: #fff;
      --border-color: #000;
  
-     /* ================== Sombreamento ================== */
+     /* Sombreamento */
      --shadow: 5px 5px rgb(0 0 0 /20%);
  }
  
@@ -90,9 +89,8 @@
      color: #fff;
  }
  
-  /* ================================================= */
-  /*                    RESET CSS                      */
-  /* ================================================= */
+ /*RESET CSS*/
+
  
  * {
      margin: 0;
@@ -151,9 +149,9 @@
      max-width: 100%;
   }
  
- /* ================================================= */
- /*           CLASSES CSS REUTILIZÁVEIS               */
- /* ================================================= */
+
+ /* CLASSES CSS REUTILIZÁVEIS*/
+
  
  .main {
      overflow: hidden;

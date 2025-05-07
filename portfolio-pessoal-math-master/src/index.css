@@ -1,42 +1,53 @@
+/* ======== Estilos responsivos para diferentes larguras de tela ======== */
+
+/* Telas com largura até 1300px */
 @media screen and (max-width: 1300px) {
+    /* Oculta elementos decorativos, exceto os do header */
     .section__deco:not(.header__deco){
         display: none;
     }
 
+    /* Reduz padding do header */
     .header {
         padding: 1.875rem .75rem;
     }
 
+    /* Limita largura da imagem principal e ajusta posição */
     .home__img-wrapper {
         max-width: 500px;
         transform: translateY(-6%);
     }
 
+    /* Ajusta altura e posição do perfil */
     .home__profile {
         height: auto;
         right: 0;
     }
 
+    /* Reduz escala da seção de dados */
     .home__data {
         transform: scale(0.9);
     }
 
+    /* Reposiciona o shape decorativo */
     .shape__3 {
         bottom: -9%;
         right: -10%;
     }
-
 }
 
+/* Telas com largura até 1150px */
 @media screen and (max-width: 1150px) {
     .container {
         max-width: 960px;
     }
 
+    /* Aumenta padding superior da seção home */
     .home {
         padding-top: 140px;
     }
 
+    /* Centraliza textos da seção home */
     .home__subtitle,
     .home__title,
     .home__job,
@@ -48,6 +59,7 @@
         margin-inline: auto;
     }
 
+    /* Centraliza imagem da home */
     .home__img-wrapper {
         position: relative;
         transform: initial;
@@ -56,21 +68,26 @@
         margin-top: 140px;
     }
 
+    /* Centraliza botões e redes sociais */
     .home__socials,
     .home__btns {
         justify-content: center;
     }
 
+    /* Reduz colunas do portfólio */
     .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Ajusta posicionamento do copyright */
     .footer__copyright:nth-child(2) {
         justify-self: start;
     }
 }
 
+/* Telas com largura até 1000px */
 @media screen and (max-width: 1000px) {
+    /* Redefine tamanhos de fonte, para maior entendimento */
     :root {
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.4rem;
@@ -84,17 +101,19 @@
         --smaller-font-size: .8125rem;
         --tiny-font-size: .7rem;
     }
-    
+
     .container {
         max-width: 740px;
     }
 
+    /* Empilha botões verticalmente */
     .home__btns {
         flex-direction: column;
         align-items: center;
         row-gap: 3.75rem;
     }
 
+    /* Reposiciona o link da seção*/
     .hero__link::before {
         left: 50%;
         top: -72%;
@@ -103,6 +122,7 @@
         height: 2.5rem;
     }
 
+    /* Reduz portfólio para 1 coluna */
     .portfolio__container {
         grid-template-columns: repeat(1, 450px);
         justify-content: center;
@@ -113,18 +133,8 @@
         row-gap: 2.5rem;
     }
 
-    .resume__icon {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    .contact__form--group {
-        grid-template-columns: 1fr;
-        row-gap: 0;
-    }
-
+    .resume__icon,
     .contact__card--icon {
-        font-size: var(--largest-font-size);
         width: 2.5rem;
         height: 2.5rem;
     }
@@ -135,6 +145,11 @@
 
     .contact__card {
         padding-left: 6.25rem;
+    }
+
+    .contact__form--group {
+        grid-template-columns: 1fr;
+        row-gap: 0;
     }
 
     .footer__container {
@@ -149,6 +164,7 @@
     }
 }
 
+/* Telas com largura até 778px */
 @media screen and (max-width: 778px) {
     .header {
         padding: 1.5rem .75rem;
@@ -187,6 +203,7 @@
         right: -7%;
     }
 
+    /* Redimensiona formas decorativas */
     .shape__1 {
         width: 6.25rem;
         height: 6.25rem;
@@ -209,12 +226,12 @@
         right: -5%;
     }
 
-    .contact__content {
+    .contact__content,
+    .contact__container {
         width: 100%;
     }
 
     .contact__container {
-        width: 100%;
         padding: 0 1rem;
         grid-template-columns: 1fr;
     }
@@ -236,6 +253,7 @@
     }
 }
 
+/* Telas com largura até 580px */
 @media screen and (max-width: 580px) {
     .show__menu {
         width: 100%;
@@ -285,6 +303,7 @@
     }
 }
 
+/* Telas com largura até 500px */
 @media screen and (max-width: 500px) {
     .nav__data {
         padding: 5rem 0 0 5.625rem;
@@ -334,6 +353,7 @@
     }
 }
 
+/* Telas com largura até 450px */
 @media screen and (max-width: 450px) {
     .resume__container {
         max-width: 350px;

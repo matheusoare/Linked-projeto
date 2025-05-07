@@ -25,4 +25,6 @@ function App() {
   );
 };
 
+//Organização do site
+
 export default App;
